@@ -26,10 +26,14 @@ A DISPLAY-type anvi'o artifact. This artifact is typically generated, used, and/
 <p style="text-align: left" markdown="1"><span class="artifact-p">[anvi-display-contigs-stats](../../programs/anvi-display-contigs-stats)</span> <span class="artifact-p">[anvi-display-codon-frequencies](../../programs/anvi-display-codon-frequencies)</span> <span class="artifact-p">[anvi-display-functions](../../programs/anvi-display-functions)</span> <span class="artifact-p">[anvi-display-metabolism](../../programs/anvi-display-metabolism)</span> <span class="artifact-p">[anvi-display-pan](../../programs/anvi-display-pan)</span> <span class="artifact-p">[anvi-display-pan-graph](../../programs/anvi-display-pan-graph)</span> <span class="artifact-p">[anvi-display-structure](../../programs/anvi-display-structure)</span> <span class="artifact-p">[anvi-inspect](../../programs/anvi-inspect)</span> <span class="artifact-p">[anvi-interactive](../../programs/anvi-interactive)</span> <span class="artifact-p">[anvi-script-checkm-tree-to-interactive](../../programs/anvi-script-checkm-tree-to-interactive)</span> <span class="artifact-p">[anvi-script-gen-functions-per-group-stats-output](../../programs/anvi-script-gen-functions-per-group-stats-output)</span> <span class="artifact-p">[anvi-script-snvs-to-interactive](../../programs/anvi-script-snvs-to-interactive)</span></p>
 
 
-## Required or used by
 
 
-There are no anvi'o tools that use or require this artifact directly, which means it is most likely an end-product for the user.
+## Required by
+
+
+There are no anvi'o tools that require this artifact directly, which means it is most likely an end-product for the user.
+
+
 
 
 ## Description
@@ -183,6 +187,7 @@ Anvi'o allows you to create selections of items shown in the display (whether th
   - __Load / Store bins collection__: when you are satisfied with your collection of bins, you can save them. You can have as many collections of bins as you want and you can load them later.
   - __Generate a static summary page__: runs <span class="artifact-p">[anvi-summarize](/help/main/programs/anvi-summarize)</span> in the background with the collection of your choice. For more information check <span class="artifact-p">[anvi-summarize](/help/main/programs/anvi-summarize)</span>.
   - __Recalculate / Show Taxonomy for Bins__: (only visible when using <span class="artifact-p">[anvi-interactive](/help/main/programs/anvi-interactive)</span>) related to the top most checkbox "Realtime taxonomy estimation for bins". If you ran <span class="artifact-p">[anvi-run-scg-taxonomy](/help/main/programs/anvi-run-scg-taxonomy)</span>, then anvi'o will be able to display realtime taxonomy estimation of your bin based on the consensus taxonomy of annotated Ribosomal Proteins included in the bins. Not available if you did not run <span class="artifact-p">[anvi-run-scg-taxonomy](/help/main/programs/anvi-run-scg-taxonomy)</span> and if there are no compatible Ribosomal Proteins. When clicking on the Show Taxonomy for Bins, you can get a detailed view of individual Ribosomal Proteins gene per bins, and their individual taxonomy estimation as well as the bin's consensus taxonomy estimation. It is a great complement to the completion/redundancy estimation when assessing bin's completeness and potential contamination.
+  - __Select contigs rather than splits__: (only visible when using <span class="artifact-p">[anvi-interactive](/help/main/programs/anvi-interactive)</span>) when this checkbox is enabled, selecting any split in the display will automatically select all other splits that belong to the same parent contig. This is useful when you want to bin at the contig level rather than the split level, ensuring that no contig is ever split across multiple bins.
 
 ### Data tab
 

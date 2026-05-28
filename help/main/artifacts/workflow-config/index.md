@@ -26,10 +26,18 @@ A JSON-type anvi'o artifact. This artifact is typically provided **by the user**
 There are no anvi'o tools that generate this artifact, which means it is most likely provided to the anvi'o ecosystem by the user.
 
 
-## Required or used by
 
 
-<p style="text-align: left" markdown="1"><span class="artifact-r">[anvi-migrate](../../programs/anvi-migrate)</span> <span class="artifact-r">[anvi-run-workflow](../../programs/anvi-run-workflow)</span></p>
+## Required by
+
+
+<p style="text-align: left" markdown="1"><span class="artifact-r">[anvi-run-workflow](../../programs/anvi-run-workflow)</span></p>
+
+
+
+## Can be used by
+
+<p style="text-align: left" markdown="1"><span class="artifact-r">[anvi-migrate](../../programs/anvi-migrate)</span></p>
 
 
 ## Description
@@ -52,6 +60,8 @@ The config file contains three types of information:
 1. **General parameters**, including the name of the workflow, the version of this config file, and links to the <span class="artifact-n">[fasta-txt](/help/main/artifacts/fasta-txt)</span> or <span class="artifact-n">[samples-txt](/help/main/artifacts/samples-txt)</span> file)
 2. **Rule specific parameters** which allow you to set the parameters on individual anvi'o programs that are run in the workflow.
 3. **Output directory names** which just tell anvi'o what to name all of the intermediate and final outputs (to help keep things organized).
+
+The `LOGS_DIR` entry controls the base workflow log name. Workflow logs are written under `00_LOGS`, within a subdirectory for the workflow or named run. During a workflow run, rule logs are organized under this directory by rule name, and a tab-delimited manifest named `<workflow-name>-workflow-manifest.tsv` is written there as well. For example, `LOGS_DIR` values such as `00_LOGS`, `00_LOGS_PHYLO`, `00_LOGS_FIVE_PAN`, or `00_LOGS-idba_ud` become directories such as `00_LOGS/phylogenomics`, `00_LOGS/phylogenomics`, `00_LOGS/pangenomics`, or `00_LOGS/idba_ud`.
 
 For example, the default config file for the [contigs workflow](../../workflows/contigs) has no rule specific parameters and looks like this:
 

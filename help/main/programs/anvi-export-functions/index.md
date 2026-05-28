@@ -28,16 +28,24 @@ Export functions of genes from an anvi&#x27;o contigs database for a given annot
 
 
 
-## Can consume
+## Requires
 
 
-<p style="text-align: left" markdown="1"><span class="artifact-r">[contigs-db](../../artifacts/contigs-db) <img src="../../images/icons/DB.png" class="artifact-icon-mini" /></span> <span class="artifact-r">[functions](../../artifacts/functions) <img src="../../images/icons/CONCEPT.png" class="artifact-icon-mini" /></span> <span class="artifact-r">[genes-of-interest-txt](../../artifacts/genes-of-interest-txt) <img src="../../images/icons/TXT.png" class="artifact-icon-mini" /></span></p>
+<p style="text-align: left" markdown="1"><span class="artifact-r">[contigs-db](../../artifacts/contigs-db) <img src="../../images/icons/DB.png" class="artifact-icon-mini" /></span> <span class="artifact-r">[functions](../../artifacts/functions) <img src="../../images/icons/CONCEPT.png" class="artifact-icon-mini" /></span></p>
 
 
-## Can provide
+
+## Can use
+
+<p style="text-align: left" markdown="1"><span class="artifact-r">[genes-of-interest-txt](../../artifacts/genes-of-interest-txt) <img src="../../images/icons/TXT.png" class="artifact-icon-mini" /></span></p>
+
+
+## Provides
 
 
 <p style="text-align: left" markdown="1"><span class="artifact-p">[functions-txt](../../artifacts/functions-txt) <img src="../../images/icons/TXT.png" class="artifact-icon-mini" /></span></p>
+
+
 
 
 ## Usage
@@ -57,6 +65,16 @@ You can also get annotations for only a specific list of sources. For example:
 anvi&#45;export&#45;functions &#45;c <span class="artifact&#45;n">[contigs&#45;db](/help/main/artifacts/contigs&#45;db)</span> \
                       &#45;&#45;annotation&#45;sources source_1,source_2,source_3
 </div>
+
+To include positional and contig-level context for each gene in the output, use `--include-contig-info`. This extends the long-format output with seven additional columns: the contig name, gene start and stop coordinates, strand direction, whether the gene call is partial, contig length, and contig GC content:
+
+<div class="codeblock" markdown="1">
+anvi&#45;export&#45;functions &#45;c <span class="artifact&#45;n">[contigs&#45;db](/help/main/artifacts/contigs&#45;db)</span> \
+                      &#45;&#45;include&#45;contig&#45;info \
+                      &#45;o output.txt
+</div>
+
+Note: `--include-contig-info` has no effect when used together with `--matrix-format`.
 
 
 {:.notice}

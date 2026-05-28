@@ -26,10 +26,14 @@ A WORKFLOW-type anvi'o artifact. This artifact is typically generated, used, and
 <p style="text-align: left" markdown="1"><span class="artifact-p">[anvi-run-workflow](../../programs/anvi-run-workflow)</span></p>
 
 
-## Required or used by
 
 
-There are no anvi'o tools that use or require this artifact directly, which means it is most likely an end-product for the user.
+## Required by
+
+
+There are no anvi'o tools that require this artifact directly, which means it is most likely an end-product for the user.
+
+
 
 
 ## Description
@@ -45,6 +49,10 @@ As of now, the available workflows include,
 * [tRNAseq workflow](../../workflows/trnaseq)
 * [EcoPhylo workflow](../../workflows/ecophylo)
 * [SRA-download workflow](../../workflows/sra-download)
+
+Each workflow writes logs into `00_LOGS`, with one subdirectory per workflow or named run. Rule logs are organized by rule name, as in `00_LOGS/metagenomics/anvi_profile/G01-S01.log` or `00_LOGS/sra_download/check_md5sum/SRR5965623.log`.
+
+Workflow runs also write a tab-delimited manifest named `<workflow-name>-workflow-manifest.tsv` in the workflow-specific log directory, such as `00_LOGS/metagenomics/metagenomics-workflow-manifest.tsv`. The manifest reports each Snakemake job's status, rule name, `group` and `read` wildcards when available, the rule log path, and the Snakemake log path when Snakemake reports one.
 
 
 {:.notice}

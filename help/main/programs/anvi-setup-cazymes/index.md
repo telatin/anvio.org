@@ -28,16 +28,20 @@ Download and setup CAZyme data from the dbCAN3.
 
 
 
-## Can consume
+## Requires
 
 
 This program seems to know what its doing. It needs no input material from its user. Good program.
 
 
-## Can provide
+
+
+## Provides
 
 
 <p style="text-align: left" markdown="1"><span class="artifact-p">[cazyme-data](../../artifacts/cazyme-data) <img src="../../images/icons/DATA.png" class="artifact-icon-mini" /></span></p>
+
+
 
 
 ## Usage
@@ -47,7 +51,7 @@ This program **downloads and organizes a local copy of the data from [dbCAN2 CAZ
 
 ### Set up cazymes data
 
-anvi'o will download the newest version of the database (V13) by default:
+anvi'o will download the newest version of the database (V14) by default:
 
 <div class="codeblock" markdown="1">
 anvi&#45;setup&#45;cazymes
@@ -56,7 +60,7 @@ anvi&#45;setup&#45;cazymes
 You can use `--cazyme-version`, if you want anvi'o to download a different version of the [dbCAN2 CAZyme HMMs](https://bcb.unl.edu/dbCAN2/download/Databases/) database:
 
 {:.warning}
-The following versions have been tested for download: V9-13
+The following versions have been tested for download: V9-14
 
 <div class="codeblock" markdown="1">
 anvi&#45;setup&#45;cazymes &#45;&#45;cazyme&#45;version V10

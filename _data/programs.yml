@@ -83,6 +83,7 @@
     - name: anvi-report-inversions
     - name: anvi-report-linkmers
     - name: anvi-run-hmms
+    - name: anvi-run-globdb-functions
     - name: anvi-run-ncbi-cogs
     - name: anvi-run-scg-taxonomy
     - name: anvi-run-trna-taxonomy
@@ -91,6 +92,7 @@
     - name: anvi-search-palindromes
     - name: anvi-search-primers
     - name: anvi-search-sequence-motifs
+    - name: anvi-setup-globdb-functions
     - name: anvi-setup-ncbi-cogs
     - name: anvi-setup-scg-taxonomy
     - name: anvi-setup-trna-taxonomy
@@ -242,6 +244,12 @@
     - name: anvi-export-locus
     - name: anvi-gen-variability-profile
     - name: anvi-run-workflow
+- author: med1bel
+  programs:
+    - name: anvi-gen-pan-representative
+- author: sarilog
+  programs:
+    - name: anvi-gen-pan-representative
 - author: matthewlawrenceklein
   programs:
     - name: anvi-interactive
@@ -254,15 +262,23 @@
     - name: anvi-refine
     - name: anvi-script-filter-fasta-by-blast
     - name: anvi-script-process-genbank-metadata
+- author: dspeth
+  programs:
+    - name: anvi-run-globdb-functions
+    - name: anvi-setup-globdb-functions
 - author: ge0rges
   programs:
     - name: anvi-run-ncbi-cogs
     - name: anvi-script-gen-defense-finder-models-to-hmm-directory
     - name: anvi-script-hmm-to-hmm-directory
+    - name: anvi-script-kofam-accessions-to-hmms-directory
     - name: anvi-script-pfam-accessions-to-hmms-directory
 - author: moritzbuck
   programs:
     - name: anvi-script-compute-bayesian-pan-core
+- author: igorspp
+  programs:
+    - name: anvi-script-kofam-accessions-to-hmms-directory
 - author: astrobiomike
   programs:
     - name: anvi-script-process-genbank
