@@ -1,6 +1,6 @@
 {
     "meren": {
-        "total_commits": 8085,
+        "total_commits": 8086,
         "commits_per_year": {
             "2014": 309,
             "2015": 1064,
@@ -14,12 +14,12 @@
             "2023": 227,
             "2024": 238,
             "2025": 526,
-            "2026": 363
+            "2026": 364
         },
         "top_file": "anvio/dbops.py",
-        "latest_commit_message": "While loading the data, make it more obvious that things are happening behind the scenes",
-        "latest_commit_hash": "26d108e35e702f3bdd503ea225fad8eadf3b97d9",
-        "latest_commit_date": "13 June 2026"
+        "latest_commit_message": "Update badge for daily component tests in README",
+        "latest_commit_hash": "3f4bb97e437b8a261595f550222662726e9a10dd",
+        "latest_commit_date": "16 June 2026"
     },
     "FlorianTrigodet": {
         "total_commits": 371,
