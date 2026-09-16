@@ -22,7 +22,7 @@
         "latest_commit_date": "10 September 2026"
     },
     "FlorianTrigodet": {
-        "total_commits": 501,
+        "total_commits": 518,
         "commits_per_year": {
             "2014": 0,
             "2015": 0,
@@ -36,11 +36,11 @@
             "2023": 36,
             "2024": 24,
             "2025": 131,
-            "2026": 284
+            "2026": 301
         },
         "top_file": "anvio/profiler.py",
-        "latest_commit_message": "a simpler pip reinstall message",
-        "latest_commit_hash": "e70a77727e2cbef4e426854e769602b7e7d1848c",
+        "latest_commit_message": "let sample declare their own LR tech",
+        "latest_commit_hash": "97d22da12be09f67375279c73ab5121c00db73a6",
         "latest_commit_date": "15 September 2026"
     },
     "watsonar": {
