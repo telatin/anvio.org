@@ -64,7 +64,7 @@ anvi&#45;setup&#45;kegg&#45;data
 Additional Python packages may be needed if you installed anvi'o `v8.0-dev` before this program's package requirements were included. These can be installed with the following command.
 
 <div class="codeblock" markdown="1">
-pip install biopython reportlab pymupdf
+pip install biopython reportlab rl_accel pymupdf
 </div>
 
 The program can be tested with the following command.
